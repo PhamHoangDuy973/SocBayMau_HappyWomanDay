@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+/* &#1044;&#1106;&#1073;»‘i v&#1073;»›i thi&#1073;&#1108;&#1111;t b&#1073;»‹ di &#1044;‘&#1073;»™ng */
+@media screen and (max-width: 574px) {
+    .greetings {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .button a {
+        font-size: .5rem;
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    
+
+
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgb(25, 25, 25);
+    
+}
+.greetings{
+    width: 100%;
+    margin: 1rem 0;
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    height: 15%;
+
+}
+/* CSS cho c&#1073;c thi&#7871;t b&#7883; kh&#1073;c */
+@media (max-width: 769px) {
+    .greetings{
+        width: 100%;
+        margin: 1rem 0;
+        display: block;
+        font-size: 3rem;
+        padding-bottom: 14%;
+        font-weight: 500;
+        text-align: center;
+        height: 15%;
+    }
+  }
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1s ;
+}
+.greetings > span:nth-child(7){
+    animation-delay: 1.2s ;
+}
+.greetings > span:nth-child(8){
+    animation-delay: 1.4s;
+}
+.greetings > span:nth-child(9){
+    animation-delay: 1.6s;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+
+#letter{
+    letter-spacing: -0.2em;
+}
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    
+    .button a{
+        font-size: .5rem;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate 10s linear infinite; /* Xoay trong 10 gi&#1043;&#1118;y v&#1043;&#1169; h&#1073;&#1108;&#1038;n l&#1073;&#1108;§n */
+    width: 124px; /* K&#1043;­ch th&#1046;°&#1073;»›c c&#1073;»§a h&#1043;¬nh hoa */
+    height: 114px;
+    background: url('https://www.pinclipart.com/picdir/big/527-5271014_clipart-spring-flowers-black-and-5-petal-flower.png') no-repeat center center; /* &#1044;&#1106;&#1073;&#1108;·t h&#1043;¬nh &#1073;&#1108;&#1032;nh hoa l&#1043; m n&#1073;»&#1027;n */
+    background-size: cover; /* &#1044;&#1106;&#1073;&#1108;&#1032;m b&#1073;&#1108;&#1032;o h&#1043;¬nh &#1073;&#1108;&#1032;nh hoa n&#1073;»&#1027;n bao ph&#1073;»§ ho&#1043; n to&#1043; n */
+}
+.flower {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.petal {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+  }
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25 25 25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 50em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 120%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 50em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+.csstext{
+    display: flex;
+    width: 95%;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 12pt;
+    text-align: center;
+    white-space: normal;
+    justify-content: center;
+    padding: 28px 45%;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: normal;
+    
+}
+@media screen and (max-width: 574px) {
+    .csstext{
+        padding: 2em; /* Thay &#1044;‘&#1073;»•i &#1044;‘&#1073;»™ d&#1043; y l&#1073;»&#1027; cho thi&#1073;&#1108;&#1111;t b&#1073;»‹ di &#1044;‘&#1073;»™ng */
+    font-size: 12pt; /* &#1044;&#1106;i&#1073;»&#1027;u ch&#1073;»‰nh k&#1043;­ch th&#1046;°&#1073;»›c ph&#1043;&#1169;ng ch&#1073;»&#1031; cho thi&#1073;&#1108;&#1111;t b&#1073;»‹ di &#1044;‘&#1073;»™ng */
+    text-align: center; /* C&#1044;&#1107;n gi&#1073;»&#1031;a v&#1044;&#1107;n b&#1073;&#1108;&#1032;n cho thi&#1073;&#1108;&#1111;t b&#1073;»‹ di &#1044;‘&#1073;»™ng */
+    width: 100%; /* S&#1073;»­ d&#1073;»&#1168;ng to&#1043; n b&#1073;»™ chi&#1073;»&#1027;u r&#1073;»™ng cho thi&#1073;&#1108;&#1111;t b&#1073;»‹ di &#1044;‘&#1073;»™ng */
+    letter-spacing: 0.5px; /* &#1044;&#1106;i&#1073;»&#1027;u ch&#1073;»‰nh kho&#1073;&#1108;&#1032;ng c&#1043;&#1038;ch gi&#1073;»&#1031;a c&#1043;&#1038;c ch&#1073;»&#1031; c&#1043;&#1038;i */
+    }
+}
+#pp_letter{
+    color:#fff;
+    letter-spacing: 1px;
+    color:#fff; text-decoration: none;
+}
+.spacing_01{
+
+    padding: 0 3rem;
+}
+/* CSS cho thi&#1073;&#1108;&#1111;t b&#1073;»‹ di &#1044;‘&#1073;»™ng */
+@media (max-width: 768px) {
+    .mobile-break {
+      display: block; /* Hi&#1073;»&#1107;n th&#1073;»‹ th&#1073;&#1108;» <br> tr&#1043;&#1028;n thi&#1073;&#1108;&#1111;t b&#1073;»‹ di &#1044;‘&#1073;»™ng */
+    }
+  }
+  
+  /* CSS cho c&#1043;&#1038;c thi&#1073;&#1108;&#1111;t b&#1073;»‹ kh&#1043;&#1038;c */
+  @media (min-width: 769px) {
+    .mobile-break {
+      display: none; /* &#1073;&#1108;&#1025;n th&#1073;&#1108;» <br> tr&#1043;&#1028;n c&#1043;&#1038;c thi&#1073;&#1108;&#1111;t b&#1073;»‹ kh&#1043;&#1038;c */
+    }
+  }
+  
